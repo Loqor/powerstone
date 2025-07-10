@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "powerstone:item/redstone_granule_block"
+  }
+}

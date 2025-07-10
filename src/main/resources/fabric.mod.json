@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "powerstone",
+	"version": "${version}",
+	"name": "Powerstone",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/powerstone/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gorbboss.powerstone.Powerstone"
+		],
+		"client": [
+			"gorbboss.powerstone.PowerstoneClient"
+		],
+		"fabric-datagen": [
+			"gorbboss.powerstone.PowerstoneDataGenerator"
+		]
+	},
+	"mixins": [
+		"powerstone.mixins.json",
+		{
+			"config": "powerstone.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
